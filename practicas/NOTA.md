@@ -1,5 +1,9 @@
 # Paquete de prácticas TFM (máster CEU) - v2, 26-oct-2026
 
+> **AVISO: ARCHIVO HISTÓRICO - NO ES EL FLUJO VIGENTE DEL TFM**
+>
+> Los materiales de esta carpeta (cuadernos de prácticas, guía docente, textos de ejemplo, CSV y el notebook de figuras) pertenecen a **prácticas de cursos anteriores** y se conservan aquí solo como archivo histórico. **No son requisitos de instalación ni forman parte del flujo vigente del TFM del máster CEU**, que es un **estudio de caso sin R ni análisis estadístico**. En particular, `03_Figura_TFM.ipynb` y `datos_ficticios.csv` eran material de aquellas prácticas, no herramientas necesarias ahora.
+
 Copia de archivo del paquete entregado y guardado en la carpeta de Drive "Materiales prácticas TFM - desarrollo v2" (https://drive.google.com/drive/folders/1zJ3TAzz6X0C7oBXNL428gLY9D4hD_wKt).
 
 - `01_Cuaderno_pareja.md` y `02_Guia_docente.md`: exportados de los DOCX originales; los editables siguen en Drive.
