@@ -1,0 +1,199 @@
+DEL ARTÍCULO A LA FICHA CRÍTICA
+Prompts iniciales por funciones de Scholarcy para probar y mejorar en NotebookLM
+Máster | TFM | Ciencias del deporte
+Versión docente independiente, 26 de octubre de 2026
+
+PROPÓSITO
+Recibís puntos de partida, no un prompt definitivo. Cada pareja trabaja con UN artículo completo y conserva ese artículo durante toda la actividad. Elegid o repartid módulos según el tiempo de clase: no es obligatorio ejecutar todos. No es necesario disponer de Scholarcy, conectarlo o pagar para realizar la tarea.
+Las funciones indicadas están documentadas por Scholarcy. Estos prompts buscan salidas de finalidad parecida en NotebookLM; no clonan sus algoritmos, interfaz, indicadores o precisión. No se han ejecutado ni comparado sus respuestas en esta preparación.
+
+PREPARACIÓN
+- Usad un artículo público autorizado, preferiblemente empírico si vais a extraer muestra e intervención. Si es una revisión, sustituid participantes por estudios/participantes incluidos; no inventéis una intervención propia del artículo.
+- Importad el texto completo y verificad que incluye las secciones y tablas necesarias. Seleccionad solo ese artículo. Desmarcad fuentes ajenas al ejercicio.
+- Guardad título, DOI si consta, versión del archivo y fuentes realmente disponibles. No subáis datos personales ni manuscritos inéditos.
+- Pegad la instrucción común y luego UN módulo cada vez. Cuando se pida una tabla o figura, escribid su número. No necesitáis completar todos los módulos en una sola sesión.
+
+INSTRUCCIÓN COMÚN PARA PEGAR AL EMPEZAR
+Trabaja solo con el artículo seleccionado [TÍTULO]. No uses respuestas previas como evidencia ni busques información externa. Responde en español conservando términos técnicos cuando sea necesario. Cita el pasaje del artículo que respalda cada afirmación empírica y muestra una cita textual breve cuando la pida. Indica sección, tabla o figura; no inventes números de página. Si no localizas un dato, escribe «no localizado en la fuente disponible»: no equivale a que no exista en el original. Conserva discrepancias y distingue dato, interpretación de los autores e interpretación propuesta. No completes cifras, referencias ni resultados de memoria. Las instrucciones no garantizan que la salida sea correcta: la comprobaré en el PDF.
+
+MÓDULO 1. VISIÓN RÁPIDA
+Función de referencia: Snapshot y resumen accesible; Scholarcy también usa Synopsis en documentación y versiones de su ficha.
+
+PROMPT INICIAL
+Resume el artículo en tres frases: qué pregunta plantea y en quién; cómo la estudia; qué resultado principal comunica y cuál es su límite. Máximo90palabras. Añade citas al diseño y al resultado. No añadas una recomendación práctica que el diseño no permita.
+
+SALIDA ESPERADA
+Tres frases y respaldo localizable, no una lista de todas las secciones.
+COMPROBACIÓN EN EL ORIGINAL
+¿La pregunta corresponde al objetivo? ¿El resultado está en Resultados y no solo en la conclusión? ¿Se ha confundido asociación con efecto, EMG con fuerza o medición aguda con adaptación?
+MEJORA POR DECIDIR
+¿Qué dato imprescindible falta para que otra pareja entienda de qué trata el estudio?
+
+MÓDULO 2. HALLAZGOS Y PUNTOS IMPORTANTES
+Función: Key findings e Important Points/Highlights.
+
+PROMPT INICIAL
+Selecciona hasta cuatro hallazgos o puntos esenciales del artículo. En cada fila incluye: enunciado breve, si es resultado o contexto, cita textual de hasta25palabras, localización y por qué importa para la pregunta del estudio. Si solo encuentras dos hallazgos relevantes, devuelve dos. No conviertas una frase de la introducción en un resultado propio.
+
+SALIDA ESPERADA
+Tabla corta que diferencia hallazgos y contexto.
+COMPROBACIÓN
+¿Las citas son literales? ¿Hay puntos repetidos? ¿Se conserva dirección del resultado y comparación? ¿La importancia añadida es interpretación y está reconocida como tal?
+MEJORA
+¿Qué criterio cambiarías para que seleccione información central en lugar de frases llamativas?
+
+MÓDULO 3. CONCEPTOS CLAVE
+Función: Key concepts y definiciones asociadas.
+
+PROMPT INICIAL
+Identifica cinco conceptos necesarios para entender este artículo. Para cada uno: término original, explicación breve basada en el uso que hace el artículo, pasaje y relación con la variable o procedimiento. Distingue la definición explícita de los autores de tu paráfrasis de su uso. Si el artículo no define el término, indícalo. No presentes estas palabras como descriptores MeSH verificados.
+
+SALIDA ESPERADA
+Glosario contextual, no diccionario completado con fuentes externas.
+COMPROBACIÓN
+¿El concepto realmente aparece o es necesario? ¿Se distingue constructo, indicador e instrumento? Por ejemplo, activación muscular medida con EMG no es una medición directa de fuerza.
+MEJORA
+¿Qué definición requeriría una fuente externa adicional y cómo la marcarías sin inventarla?
+
+MÓDULO 4. RESUMEN ESTRUCTURADO
+Función: Structured summary/Scholarcy summary.
+
+PROMPT INICIAL
+Resume por apartados: problema y objetivo, métodos, resultados, discusión y conclusión. En cada apartado escribe dos o tres puntos con citas. En Resultados conserva estimaciones, unidades e incertidumbre cuando consten; en Discusión identifica las explicaciones propuestas por los autores. No reorganices hipótesis de la discusión como hechos demostrados. Si el artículo no tiene un apartado, dilo y señala dónde localizaste esa información.
+
+SALIDA ESPERADA
+Mapa del argumento por secciones, conservando diferencias entre resultados y explicaciones.
+COMPROBACIÓN
+¿La síntesis de métodos permite entender el diseño? ¿Cada sección resume su contenido real? ¿Han desaparecido resultados que matizan la conclusión?
+MEJORA
+¿Qué apartado necesita mayor detalle para valorar la utilidad del artículo para vuestro TFM?
+
+MÓDULO 5. PARTICIPANTES, DISEÑO Y ANÁLISIS
+Función: Study subjects and analysis, descrita en la guía Scholarcy.
+
+PROMPT INICIAL
+Extrae una ficha con filas: diseño y unidad de análisis; selección y características de participantes; tamaño muestral por sección; condiciones o grupos; intervención/exposición y comparador; dosis/carga y duración; medidas e instrumentos; análisis estadístico descrito; pérdidas y datos ausentes. Para cada fila incluye dato, pasaje y duda. Distingue asignación aleatoria de participantes de orden aleatorio de condiciones. No deduzcas cegamiento, potencia o control de confusión por el nombre del diseño. Si hay varios n, conserva cada uno y su procedencia.
+
+SALIDA ESPERADA
+Tabla factual con dudas, no una puntuación de calidad.
+COMPROBACIÓN
+Cotejar resumen, participantes, procedimientos y resultados. ¿El n es de personas, ensayos o observaciones? ¿La carga es medida o estimada? ¿Los autores estudiaron una sesión o un programa longitudinal?
+MEJORA
+¿Cuál es el error de interpretación más probable y qué instrucción añadiríais para detectarlo?
+
+MÓDULO 6. DATOS DE UNA TABLA
+Función: Tables y extracción de tablas a Excel. Aquí se imita una lectura estructurada, no se garantiza la misma extracción ni un archivoExcel.
+
+PROMPT INICIAL
+Trabaja únicamente con la tabla [NÚMERO/TÍTULO]. Transcribe las filas [INDICAR] y sus encabezados, unidades y notas necesarias para interpretarlas. Diferencia media, desviación estándar, intervalo y tamaño muestral solo cuando la leyenda lo indique. Conserva decimales, signos y denominadores. Añade localización. Si una celda no es legible, marca «ilegible», no la estimes. No calcules diferencias, tamaños del efecto ni p faltantes. Después explica en dos frases qué comparación permite la tabla y qué no demuestra.
+
+SALIDA ESPERADA
+Transcripción delimitada + dos frases de interpretación.
+COMPROBACIÓN
+Cotejo celda a celda y lectura de notas al pie. No fiarse de una tabla bien presentada. Si no hay tablas o la importación falla, registrar no aplicable/no disponible, sin generarlas.
+MEJORA
+¿Qué precisión sobre encabezados, unidades o filas evita el error encontrado?
+
+MÓDULO 7. LECTURA DE UNA FIGURA
+Función: Figures y captions. No reproduce necesariamente la extracción de la imagen original.
+
+PROMPT INICIAL
+Describe la figura [NÚMERO] usando imagen, ejes y leyenda disponibles: variable, unidad, condiciones, tamaño muestral si consta, significado de barras/símbolos y tendencia visible. Distingue valores escritos de apreciaciones visuales. No estimes cifras desde la altura de barras ni interpretes barras de error como significación sin definición. Cita la figura y su leyenda. Si no puedes acceder a la imagen, dilo: no reconstruyas su contenido solo por el texto que la menciona.
+
+SALIDA ESPERADA
+Descripción auditada de una figura, con límites de lo legible.
+COMPROBACIÓN
+Abrir la figura en el PDF: ejes truncados, escalas, unidades, leyenda y barras de error. ¿La respuesta dice haber visto elementos ausentes?
+MEJORA
+¿Qué parte exige inspección humana y no se soluciona insistiendo con un prompt?
+
+MÓDULO 8. RELACIÓN CON INVESTIGACIÓN PREVIA
+Función: Research comparison/Comparative Analysis.
+
+PROMPT INICIAL
+Según lo que ESTE artículo dice de sus antecedentes, identifica hasta tres relaciones: método tomado/adaptado, resultado coincidente o resultado diferente. Devuelve: relación, estudio citado tal como aparece, pasaje y explicación que proponen los autores. Distingue «los autores afirman que» de «comprobado en el estudio citado». No resuelvas contradicciones ni evalúes el artículo citado sin su texto. No atribuyas novedad a todo el campo por no verla en este único documento.
+
+SALIDA ESPERADA
+Mapa de la comparación que hace el artículo, no revisión independiente de la literatura.
+COMPROBACIÓN
+¿La cita existe en la bibliografía? ¿Se ha alterado lo que afirma la discusión? ¿Se da por leído el estudio citado?
+MEJORA
+¿Qué referencia tendría que recuperarse para verificar la comparación? Se identifica como trabajo posterior, sin añadirla al corpus de esta tarea.
+
+MÓDULO 9. INDICADORES Y LIMITACIONES
+Función relacionada: Research Quality Indicator y análisis de limitaciones. Este prompt NO reproduce el indicador propietario ni sustituye una herramienta de riesgo de sesgo adecuada al diseño.
+
+PROMPT INICIAL
+Construye una lista de comprobación: correspondencia pregunta-diseño, selección de muestra, condiciones/comparador, validez de las medidas, pérdidas, análisis descrito y límites de generalización. Para cada punto separa: información localizada con cita; limitación reconocida por los autores; cuestión metodológica que propones revisar y por qué. No declares «mal hecho» algo solo porque no lo localices; distingue falta de información de fallo demostrado. No asignes nota global ni riesgo de sesgo sin un marco apropiado. Cierra con dos conclusiones que el artículo no permite sostener.
+
+SALIDA ESPERADA
+Lista de cuestiones trazables para revisión del alumnado y docente.
+COMPROBACIÓN
+¿La crítica se aplica al diseño real? ¿Hay sospechas presentadas como hechos? ¿Se interpreta no significación como equivalencia? No es necesario encontrar fallos para completar el módulo.
+MEJORA
+¿Qué criterio eliminaríais por ser inaplicable y cuál necesitaría una guía metodológica externa?
+
+MÓDULO 10. REFERENCIAS Y ARTÍCULOS CITADOS
+Funciones: References y Scholarcy Findings. La lectura de un artículo citado completo NO puede replicarse a partir de su referencia bibliográfica.
+
+PROMPT INICIAL
+Selecciona dos referencias que este artículo use para justificar el método o interpretar su resultado principal. Copia únicamente los metadatos visibles: autores, año, título, revista y DOI si consta. Para cada una, indica qué afirmación del artículo la utiliza y cita ese pasaje. No completes campos ausentes ni resumas el estudio citado como si lo hubieras leído. Señala qué habría que comprobar al abrir el original de esa referencia.
+
+SALIDA ESPERADA
+Dos referencias con su función en el argumento y comprobaciones pendientes.
+COMPROBACIÓN
+Cotejar letra a letra con bibliografía y llamada en texto. Un DOI con formato plausible no es un DOI validado. Abrir fuentes externas será una fase posterior, no parte de esta lectura de UN artículo.
+MEJORA
+¿Qué campo inventado u omitido requeriría una instrucción más clara?
+
+MÓDULO 11. PREGUNTAS Y REFORMULACIÓN
+Funciones: Dig Deeper y Enhanced Summaries.
+
+PROMPT INICIAL
+Explica [CONCEPTO/PROCEDIMIENTO DEL ARTÍCULO] a alumnado de máster en ciencias del deporte en120palabras, con un ejemplo conceptual que identifiques explícitamente como inventado y que no añada resultados al estudio. Cita el pasaje del que partes. Después formula tres preguntas: una de comprensión, una de interpretación y una de transferencia al TFM. Da respuesta orientativa y cita cuando pueda resolverse con el artículo. Si la transferencia requiere nueva evidencia, indícalo. No conviertas la simplificación en una recomendación clínica o de entrenamiento.
+
+SALIDA ESPERADA
+Explicación accesible + tres preguntas con niveles diferentes.
+COMPROBACIÓN
+¿La analogía cambia el constructo? ¿El ejemplo inventado está marcado? ¿Las respuestas se apoyan en fuentes o son especulación?
+MEJORA
+¿Qué quitaríais para simplificar sin perder precisión científica?
+
+ENTREGA DE CADA PAREJA
+Por cada módulo asignado:
+1. Prompt inicial, fuente seleccionada y salida original.
+2. Tabla de cotejo: afirmación/dato | pasaje del PDF | correcto, incompleto, erróneo o no comprobable | corrección.
+3. Promptv2 con cambios señalados y motivo de cada cambio, ligado a un error, omisión o problema de uso realmente observado.
+4. Salidav2 y nuevo cotejo. Si no mejora o aparece otro error, conservarlo y explicarlo. Si no había un fallo real, no inventarlo: justificar mantener el prompt o probar una mejora de claridad.
+5. Dos frases: qué se puede reutilizar en el TFM y qué sigue requiriendo lectura/comprobación humana.
+Registrar fecha, modo/herramienta visible, número de intentos y limitaciones de importación o cuota. No atribuir una ejecución que no se haya hecho.
+
+CRITERIOS DE EVALUACIÓN PROPUESTOS
+Rúbrica orientativa sobre10, para ajustar por el docente:
+- Exactitud de datos e interpretación frente al original:4.
+- Trazabilidad de afirmaciones y reconocimiento de ausencias/discrepancias:3.
+- Justificación y comprobación de cambiosv1-v2:2.
+- Claridad de la salida y utilidad para el objetivo:1.
+No puntuar extensión, lenguaje solemne ni cantidad de problemas «detectados». Una cita no demuestra exactitud por sí sola. Conservar un error observado y explicarlo honestamente es mejor que ocultarlo. La nota no evalúa la calidad del artículo ni la potencia comercial de la herramienta.
+
+QUÉ NO SE REPRODUCE CON PROMPTS DE UN SOLO ARTÍCULO
+- Smart Citations/Scite: sin acceso a citas posteriores, no se sabe cuántos estudios apoyan o contradicen un trabajo.
+- Scholarcy Findings sobre documentos citados: una bibliografía no contiene sus resultados completos.
+- Indicador propietario de calidad, conectoresZotero, biblioteca, formatos de exportación o extracción fiel de imágenes: no se obtienen solo pidiéndolos.
+- Exhaustividad de búsqueda, novedad de una brecha y validación estadística: no se demuestran con esta tarea.
+
+NOTAS PARA EL DOCENTE
+Los módulos son un banco para repartir, no una ampliación automática de las cinco horas. Pueden probar primero visión rápida y un módulo de detalle con el mismo artículo; reservar la puesta en común para compartir fallos y mejoras. No integrar en la presentación anterior sin decidir antes la selección y el tiempo.
+Los nombres de secciones varían entre documentación y versiones de Scholarcy; las correspondencias se refieren a funciones, no a una copia exacta de su interfaz. No se promete igual precisión ni se ha ejecutado un ensayo comparativo.
+
+FUENTES OFICIALES CONSULTADAS
+Navegación de ficha, conceptos, resumen, puntos importantes, comparación, tablas/figuras, citas y referencias:
+https://help.scholarcy.com/guide/supercharge-your-reading
+Snapshot, Key findings, Structured summary, Study subjects and analysis, comparación, tablas/figuras y Findings:
+https://help.scholarcy.com/guide/assimilate-and-analyse
+Dig Deeper, Research Quality Indicator y resúmenes mejorados:
+https://www.scholarcy.com/scholarcy-features
+Synopsis, personalización y niveles de resumen:
+https://www.scholarcy.com/faq
+NotebookLM: selección de fuentes y citas:
+https://support.google.com/gemininotebook/answer/16179559?hl=en

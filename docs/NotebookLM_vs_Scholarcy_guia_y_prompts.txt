@@ -1,0 +1,129 @@
+NOTEBOOKLM FRENTE A SCHOLARCY
+Comparación funcional y prompts para lectura científica y docencia
+Comprobación documental: 26 de octubre de 2026.
+
+DECISIÓN
+Para trabajar unos pocos artículos del TFM, extraer una ficha, contrastar resultados y preparar una síntesis docente, empezaría con NotebookLM y un protocolo de preguntas y comprobación. Puede cubrir esas tareas sin necesidad de añadir Scholarcy. Esto es una recomendación por ajuste funcional, no una prueba de que ambos tengan igual precisión.
+Scholarcy merece la pena si se usa con frecuencia su flujo de fichas estructuradas, biblioteca, importación desde Zotero, extracción/exportación de tablas y referencias, o matrices bibliográficas con menos preparación manual. Un prompt puede imitar una estructura de ficha; no reproduce por sí solo un sistema de biblioteca, conectores, cuotas o funciones de exportación.
+
+ALCANCE DE ESTA COMPARACIÓN
+Se han contrastado funciones en documentación oficial. No se ha hecho un ensayo cara a cara generando respuestas en ambas herramientas. No se han subido artículos a nuevas cuentas, gastado créditos ni probado las cuotas del alumnado. Los prompts de abajo están preparados, no ejecutados en NotebookLM ni Scholarcy durante esta comparación.
+Google presenta ahora la ayuda como Gemini Notebook en las páginas consultadas, antes NotebookLM. Se mantiene aquí el nombre que usas para evitar confundirlo con otra recomendación.
+
+1. QUÉ PUEDE REPLICAR NOTEBOOKLM CON BUENAS INSTRUCCIONES
+
+Ficha de lectura por artículo
+- NotebookLM: pedir campos estables, seleccionar una sola fuente, exigir pasajes y conservar ausencias.
+- Scholarcy: fichas estructuradas y acceso a puntos importantes del texto.
+- Juicio: solapamiento funcional alto. No demuestra igualdad de extracción ni ausencia de errores.
+
+Explicar métodos y responder preguntas
+- Ambos documentan preguntas personalizadas sobre artículos.
+- NotebookLM permite seleccionar fuentes y configurar estilo/longitud. Scholarcy ofrece Dig Deeper y resúmenes adaptados.
+- Juicio: buen prompting puede cubrir necesidades parecidas de comprensión. Una explicación convincente no confirma que el método sea válido.
+
+Comparar varios artículos y construir matriz
+- NotebookLM documenta Data Tables: filas/columnas personalizables y exportación a Sheets; citas en otra pestaña.
+- Scholarcy documenta matrices de síntesis y exportación a Excel desde fichas.
+- Juicio: no hay que contratar Scholarcy solo por tener una tabla comparativa. Comparar exige comprobar que las variables representan lo mismo.
+
+Material docente
+- NotebookLM documenta informes, guías, flashcards y quizzes. Sus flashcards de estudio no son idénticas a las Flashcards de Scholarcy, que son fichas-resumen de artículos.
+- Scholarcy documenta resúmenes estructurados, lectura y anotación.
+- Juicio: NotebookLM encaja especialmente bien si, además de leer, se quiere preparar preguntas o una guía de clase.
+
+2. DIFERENCIAS QUE NO SE ARREGLAN SOLO CON PROMPTS
+
+Flujo de biblioteca y referencias
+Scholarcy documenta colecciones, Zotero, bibliografía anotada y exportaciones como RIS/BibTeX y otros formatos. No conviene afirmar que NotebookLM carece de toda exportación: ya documenta Docs/Sheets y funciones experimentales de archivos. Pero pedir «hazlo como Scholarcy» no garantiza un flujo equivalente ni metadatos correctos. Verificar autor, año, título y DOI en originales antes de citar.
+
+Tablas y figuras
+Scholarcy documenta extracción de tablas a Excel y figuras/captions cuando consigue identificarlas. NotebookLM documenta citas de texto e imágenes y tablas generadas desde fuentes. Generar una tabla de síntesis no es lo mismo que extraer fielmente una tabla del PDF. En ambos, revisar números, unidades, encabezados y notas en la página original.
+
+Indicadores de calidad
+Scholarcy incluye Research Quality Indicator y Research Comparison. Son ayudas de software, no una evaluación validada para tu estudio ni una herramienta universal de riesgo de sesgo. Pedir a NotebookLM una puntuación no reproduce ni valida esos indicadores. Ninguno debe decidir automáticamente calidad metodológica, causalidad o riesgo de sesgo.
+
+Importación y cobertura
+Un prompt no recupera una página o suplemento que no se ha importado, no corrige una tabla ilegible y no convierte un resumen en texto completo. Comprueba el contenido realmente disponible. En fuentes web, Google advierte que puede importar solo el texto de la página, no imágenes ni páginas enlazadas. Los PDF se tratan como fuentes PDF. Si algo falta, anotar «no disponible en la fuente importada», no «el artículo no lo informa».
+
+Cuotas y funciones
+Los prompts no saltan límites de cuenta. La ayuda actual de Google anuncia límites por cómputo desde el 2-septiembre-2026; otra FAQ aún mantiene cifras diarias anteriores. Consultar Settings > Usage en la cuenta concreta. Scholarcy distingue su resumen gratuito y funciones de suscripción; su página de precios contiene elementos que no permiten comparar todas las cuotas limpiamente. No se promete uso ilimitado gratuito ni acceso a todas las exportaciones para el alumnado.
+
+3. FLUJO RECOMENDADO
+1. Importar originales completos y suplementos necesarios, con permiso; para clase usar los artículos públicos A/B ya preparados. No añadir datos personales ni manuscritos inéditos.
+2. Verificar que título, secciones, tablas y figuras necesarias aparecen. Mantener A y B identificados por título/DOI, no solo por nombre de archivo.
+3. Seleccionar únicamente A para la primera ficha. Después únicamente B. Solicitar una salida breve y estructurada.
+4. Comprobar contra el PDF y corregir. Seleccionar A y B para comparar. No dejar que un error de la primera ficha se convierta en evidencia para la siguiente.
+5. Revisar cada afirmación y cita de la síntesis antes de reutilizarla. Guardar aparte la salida original, la corregida y las dudas.
+6. Si usas Data Tables, exportar y revisar la pestaña de citas. Modificar un Docs/Sheets exportado no sincroniza esos cambios de vuelta al notebook.
+
+4. PROMPTS LISTOS PARA COPIAR
+Las instrucciones reducen riesgos; no garantizan que el sistema las cumpla.
+
+PROMPT 1. FICHA ESTRUCTURADA DE UNA FUENTE
+Antes de pegar: selecciona solo el artículo que quieres analizar y sustituye [TÍTULO].
+
+Trabaja solo con la fuente seleccionada [TÍTULO], no con notas o respuestas anteriores como evidencia. Elabora una ficha con: pregunta, diseño, población, reclutamiento, muestra en cada sección, intervención/exposición y comparador, dosis/carga, duración, medidas e instrumentos, resultado principal, estimación e incertidumbre si constan, pérdidas, limitaciones declaradas y límites de interpretación. Para cada dato añade una cita al pasaje original y una cita textual breve; indica sección o tabla. No inventes páginas. Separa lo dicho por los autores de tu interpretación. Si no localizas algo, escribe «no localizado en la fuente disponible». Si hay cifras discrepantes, muestra ambas con su localización; no elijas una sin justificación. No calcules cifras faltantes ni completes referencias de memoria. Termina con tres comprobaciones manuales prioritarias.
+
+PROMPT 2. MATRIZ QUE NO MEZCLE CONSTRUCTOS
+Antes de pegar: selecciona solo los artículos A y B.
+
+Compara A [TÍTULO/DOI] y B [TÍTULO/DOI] usando solo estas fuentes. Haz una tabla con una fila por artículo y columnas: diseño, muestra y discrepancias, condición/comparador, carga, duración, variable y unidad, resultado y pasaje, limitaciones, qué no midió y posible utilidad para el TFM. Cita cada resultado y cada dato de muestra. No combines muestras ni promedies resultados entre artículos. No trates EMG aguda como fuerza, hipertrofia o adaptación longitudinal. No interpretes «sin diferencia significativa» como equivalencia. Después explica qué diferencias de protocolo impiden una comparación directa. Si una celda queda sin respaldo, marca «pendiente de comprobar».
+
+PROMPT 3. CONTRASTAR UNA AFIRMACIÓN CON LA FUENTE
+
+Contrasta esta frase con las fuentes seleccionadas: «[AFIRMACIÓN]». Devuelve: afirmación, pasaje pertinente y cita, qué mide realmente ese pasaje, relación con la afirmación (apoyo directo, apoyo parcial, contradicción o no responde), y redacción prudente alternativa. No conviertas una asociación en causalidad. Si falta evidencia, dilo sin completarla con conocimiento externo. La clasificación es una propuesta que revisaré en el original; no una validación automática.
+
+PROMPT 4. SÍNTESIS PARA EL TFM
+
+Con los dos artículos seleccionados, redacta una síntesis de150-200 palabras que distinga resultados, límites y transferencia. Cita las afirmaciones empíricas. No hagas una lista de resúmenes consecutivos: organiza por pregunta y diferencias de diseño o medición. Separa la conclusión respaldada de la hipótesis. Si propones una brecha, llámala «candidata detectada en este corpus» y explica qué búsqueda adicional haría falta antes de afirmar novedad. No generalices a poblaciones o resultados no estudiados.
+
+PROMPT 5. PASE DE COMPROBACIÓN
+
+Revisa la respuesta anterior como borrador, no como fuente. Vuelve a los originales seleccionados. Construye una tabla: afirmación o cifra, fuente/pasaje, coincidencia exacta, problema detectado y corrección propuesta. Comprueba especialmente muestra, denominadores, unidad, carga, duración, dirección del efecto y distinción entre resultado y explicación. No afirmes «verificado» si no puedes mostrar el respaldo. Termina con las comprobaciones que debe hacer una persona. No es obligatorio encontrar un error si no lo has localizado.
+
+PROMPT 6. MATERIAL DOCENTE SIN SOBREINTERPRETAR
+
+A partir de las fuentes seleccionadas y de las fichas ya cotejadas, prepara cuatro preguntas para un taller de TFM: dos sobre diseño/medida, una sobre interpretación y una sobre transferencia. Incluye respuesta orientativa, pasaje con cita y error frecuente que discutir. Evita preguntas cuya respuesta requiera datos que no están en las fuentes. Distingue hechos del artículo y criterio metodológico del docente. No inventes resultados ni preguntas basadas en una supuesta igualdad entre EMG y fuerza.
+
+5. CÓMO COMPROBAR SI TE BASTA FRENTE A SCHOLARCY
+Protocolo propuesto, aún no ejecutado:
+- Mismos PDF A/B, mismo acceso al texto y mismas tareas en ambos. En Scholarcy evaluar la ficha por defecto y, si está disponible, la pregunta equivalente. No ocultar esa diferencia de configuración.
+- Preparar primero una ficha humana de contraste desde originales. No tomar la salida de una IA como patrón oro.
+- Campos mínimos: diseño, muestra por sección, carga, condición, duración, variable/unidad, resultado, límite, pasaje. A en 20 hombres; B tiene discordancia entre resumen 20 y apartadoSubjects 15 hombres + 7 mujeres. La respuesta debe conservarla, no inventar un único n.
+- Añadir dos trampas interpretativas: EMG aguda no demuestra ganancia de fuerza longitudinal; no significación no demuestra equivalencia.
+- Registrar por herramienta: campos correctos/errores, omisiones, referencias sin respaldo y minutos de revisión/corrección. Una cita que abre no basta: debe sostener exactamente la afirmación.
+- Para considerar utilizable esa salida: ningún dato inventado ni error interpretativo grave; corregir los restantes antes de usar. Repetir en otros tipos de artículo si se quiere generalizar.
+- Si NotebookLM ofrece el resultado necesario con una revisión asumible, no necesitas añadir Scholarcy. Si la biblioteca/exportación y menor trabajo manual ahorran tiempo de forma repetida, probar Scholarcy puede tener sentido. No hay porcentajes de equivalencia demostrados aquí.
+
+CORPUS PÚBLICO PARA ESA PRUEBA
+A: Muyor et al. 2019, DOI 10.1371/journal.pone.0218209
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218209
+B: Patterson et al. 2015, DOI 10.7717/peerj.1365
+https://peerj.com/articles/1365/
+Los controles del corpus se habían comprobado en los originales para el taller. No se ha vuelto a ejecutar una comparación de modelos con esos artículos ahora.
+
+FUENTES OFICIALES DE FUNCIONES
+NotebookLM/Gemini Notebook: chat, selección de fuentes y citas
+https://support.google.com/gemininotebook/answer/16179559?hl=en
+Tablas, informes, exportación y aislamiento entre notebooks
+https://support.google.com/gemininotebook/answer/16206563?hl=en
+Informes personalizados y aviso de errores
+https://support.google.com/gemininotebook/answer/18323649?hl=en
+Fuentes/importación
+https://support.google.com/notebooklm/answer/16215270
+Límites actuales por cómputo
+https://support.google.com/gemininotebook/answer/17670842?hl=en
+Flashcards/quiz
+https://support.google.com/gemininotebook/answer/16958963?hl=en
+Scholarcy: funciones
+https://www.scholarcy.com/scholarcy-features
+Extracción de tablas/figuras y comparaciones
+https://help.scholarcy.com/guide/assimilate-and-analyse
+Integraciones y exportaciones
+https://www.scholarcy.com/integrations
+Planes y límites según proveedor
+https://www.scholarcy.com/pricing
+
+CONCLUSIÓN
+Sí como sustitución funcional para tu lectura y síntesis guiadas; no como equivalencia de precisión ya demostrada ni como copia de todo el flujo de Scholarcy. Lo determinante es el conjunto fuentes completas + tareas claras + comprobación contra originales, no un prompt largo o llamativo.

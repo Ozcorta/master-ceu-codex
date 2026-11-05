@@ -1,0 +1,1 @@
+("Hypertension"[MeSH Terms] OR hypertens*[tiab] OR "high blood pressure"[tiab]) AND ("Exercise"[MeSH Terms] OR exercis*[tiab] OR "physical activ*"[tiab] OR "aerobic train*"[tiab])

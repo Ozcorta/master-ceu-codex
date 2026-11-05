@@ -1,0 +1,56 @@
+EJEMPLO DOCENTE REPRODUCIBLE | PubMed a Polyglot
+Comprobación: 26 de octubre de 2026, aproximadamente16:55-16:57 Europe/Madrid.
+
+Pregunta orientativa: ¿Qué literatura estudia el ejercicio en personas con hipertensión, con interés en sus efectos sobre la presión arterial?
+No se añade el resultado, comparador, edad o diseño como bloque obligatorio inicial. Es una demostración completa del flujo de búsqueda y traducción, no una revisión sistemática ni una estrategia exhaustiva.
+
+1. CONCEPTOS
+Población/condición: hipertensión.
+Intervención: ejercicio/actividad física.
+MeSH verificados: Hypertension(D006973), Exercise(D015444).
+High Blood Pressure y Physical Activity constan como entry terms de los respectivos descriptores. hypertens*, exercis* y las frases truncadas son variantes de texto libre propuestas; no una lista completa de MeSH.
+
+2. CONSULTA ÍNTEGRA PARA PUBMED Y PARA POLYGLOT
+("Hypertension"[MeSH Terms] OR hypertens*[tiab] OR "high blood pressure"[tiab]) AND ("Exercise"[MeSH Terms] OR exercis*[tiab] OR "physical activ*"[tiab] OR "aerobic train*"[tiab])
+
+Se incluye también, sin encabezados ni comentarios, en01_PubMed_para_Polyglot.txt.
+Sin filtros de fecha, idioma, edad, especie, tipo o texto gratuito.
+OR reúne alternativas de cada concepto; AND cruza conceptos. MeSH aporta indexación temática; [tiab] texto de título/resumen y palabras clave de autor.
+
+3. REPRODUCIR EN PUBMED
+Abre https://pubmed.ncbi.nlm.nih.gov/ y pega la consulta completa. Pulsa Search. En Advanced > History > Search Details revisa la interpretación y posibles avisos. Anota fecha y recuento observado; guarda la cadena exacta, no solo #1/#2.
+
+Prueba real: la consulta fue aceptada por ESearch, el servicio oficial de PubMed, con33186 resultados y sin error/warning devuelto. La traducción conservó ambos bloques, MeSH y campos Title/Abstract. El navegador de PubMed quedó en CAPTCHA, así que no se verificó el recuento en su pantalla. El recuento es una instantánea, puede cambiar; no mide calidad ni exhaustividad. No se seleccionaron estudios ni se descargó un corpus.
+
+4. REPRODUCIR EN POLYGLOT
+Abre https://polyglot.sr-accelerator.com/ . En Your query pega únicamente la consulta completa, sin explicación, lista de resultados ni referencias #1/#2. Comprueba que aparece una sola vez. La traducción se genera al introducir la consulta; abre el panel de la plataforma destino y usa su icono Copy to clipboard.
+Para este ejemplo no necesitas Replace Line References, porque la cadena no usa números de historial.
+
+5. TRADUCCIONES AUTOMÁTICAS REALMENTE OBSERVADAS
+Estas son las salidas sin corregir de Polyglot. NO están ejecutadas ni validadas en las bases destino.
+
+Scopus (advanced search):
+(INDEXTERMS(Hypertension) OR TITLE-ABS(hypertens*) OR TITLE-ABS("high blood pressure")) AND (INDEXTERMS(Exercise) OR TITLE-ABS(exercis*) OR TITLE-ABS("physical activ*") OR TITLE-ABS("aerobic train*"))
+
+WoS Advanced:
+(ALL=Hypertension OR (TI=hypertens* OR AB=hypertens*) OR (TI="high blood pressure" OR AB="high blood pressure")) AND (ALL=Exercise OR (TI=exercis* OR AB=exercis*) OR (TI="physical activ*" OR AB="physical activ*") OR (TI="aerobic train*" OR AB="aerobic train*"))
+
+6. QUÉ REVISAR ANTES DE USARLAS
+No confundas transformación de sintaxis con equivalencia de búsqueda. Por ejemplo, Polyglot convirtió [MeSH Terms] en INDEXTERMS para Scopus y en ALL= para WoS; esos campos no son el mismo vocabulario controlado MeSH. También convirtió [tiab] en TITLE-ABS o en TI/AB, que no garantizan la misma cobertura de campos. Comprueba términos, paréntesis, comillas, truncamientos, campos y avisos en la plataforma concreta. En Embase revisa Emtree; en CINAHL sus encabezamientos propios. No tomes una salida automática como un descriptor validado de otra base.
+Prueba artículos semilla pertinentes y averigua si un bloque elimina alguno. Revisa ruido. Que los recuentos difieran entre bases no prueba que la traducción esté mal: sus coberturas también difieren.
+
+7. REGISTRO DE CLASE
+Base/plataforma | fecha | cadena exacta | recuento observado | avisos | artículos semilla recuperados | cambios pendientes.
+Mantén separadas la versión automática y la versión corregida. No presentes como probado lo que solo se ha traducido.
+
+FUENTES
+https://polyglot.sr-accelerator.com/
+https://pubmed.ncbi.nlm.nih.gov/help/
+https://www.ncbi.nlm.nih.gov/mesh/68006973
+https://www.ncbi.nlm.nih.gov/mesh/68015444
+https://www.ncbi.nlm.nih.gov/books/NBK25497/
+
+No se han modificado presentación ni materiales previos ni se ha activado ninguna cuenta o alerta.
+
+
+[exit code: 0]
