@@ -7,6 +7,12 @@ description: Evalúa si un borrador de TFM (estudio de caso en salud) cumple tod
 
 Evalúa el cumplimiento de los requisitos: qué está cubierto, qué falta y dónde está la evidencia. Esta evaluación no da una nota ni sustituye la revisión del tutor.
 
+## Antes de evaluar
+
+1. Identifica el borrador a evaluar. Si el alumno no indica archivo o hay varios candidatos, pregúntale cuál; no elijas por tu cuenta.
+2. Evalúa solo lo que está en el documento. Si el TFM es largo o está repartido en varios archivos, repásalo por secciones y marca como `no consta` cualquier parte que no hayas podido leer completa; nunca evalúes de memoria una parte sin revisar.
+3. Si el alumno pide una valoración de método (diseño, medición, análisis), indica que esta skill solo comprueba cumplimiento y remite la duda al agente `tutor_metodologico` o a su tutor.
+
 ## Fuente de requisitos (obligatorio)
 
 1. Usa `checklists/requisitos-tfm.md` de este proyecto: es una extracción de los apuntes ("Bases de datos y evidencia 26-27", Taller 5 horas) con la diapositiva de origen de cada requisito, pendiente de validación por el profesor. Si el alumno aporta apuntes más recientes o una lista oficial distinta, avísale de la diferencia y usa la fuente que él indique.
@@ -55,3 +61,9 @@ Después de la tabla:
 - Cumplir una guía de reporte no demuestra calidad metodológica ni eficacia: no lo afirmes.
 - No des una nota ni predigas la evaluación.
 - No modifiques el TFM en esta revisión salvo que el alumno lo pida después, y entonces solo los cambios solicitados.
+
+## Mantenimiento de esta skill
+
+- Fuente: https://github.com/Ozcorta/master-ceu-codex (esta skill se crea y se actualiza en ese repositorio).
+- Última actualización: 2026-11-05.
+- Estado de verificación: probada de escritorio sobre el caso ficticio (`ejemplos/evaluacion-caso-ficticio.md`); instalación y ejecución real en Codex pendientes.
