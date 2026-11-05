@@ -1,0 +1,114 @@
+PUBMED | BÚSQUEDA AVANZADA
+Chuleta docente independiente. Comprobada el 26 de octubre de 2026.
+Ejemplos de sintaxis, no estrategia exhaustiva ni búsqueda de revisión ejecutada.
+
+1. CONSTRUIR BLOQUES: OR DENTRO, AND ENTRE BLOQUES
+OR incorpora alternativas; AND exige ambos conceptos; NOT excluye.
+PubMed procesa de izquierda a derecha. Usa paréntesis para agrupar.
+
+(hypertension[tiab] OR "high blood pressure"[tiab]) AND (exercise[tiab] OR "physical activity"[tiab])
+
+Presión arterial e hipertensión no son sinónimos exactos. Elige términos según la pregunta. No añadas todos los componentes PICO automáticamente: un comparador o resultado muy restrictivos pueden perder estudios útiles.
+NOT puede eliminar artículos relevantes que mencionen el término excluido. Ejemplo para entender su efecto, no filtro recomendado:
+exercise[tiab] NOT hypertension[tiab]
+
+2. ELEGIR EL CAMPO
+[ti] = título.
+[tiab] = título/resumen; también incluye palabras clave de autor y otros campos asociados especificados por PubMed. No busca el texto completo.
+[mh] o [MeSH Terms] = vocabulario controlado MeSH.
+[au] = autor. [ta] = revista. [dp] = fecha de publicación. [pt] = tipo de publicación.
+
+exercise[ti]
+exercise[tiab]
+brody[au]
+
+Pon la etiqueta en CADA término. Sin etiquetas ni restricciones, PubMed puede usar el mapeo automático (ATM). Los campos explícitos cambian ese comportamiento; revisa siempre Search Details.
+
+3. COMBINAR MeSH Y TEXTO LIBRE
+El MeSH recoge la indexación temática; el texto libre ayuda a encontrar registros sin esa indexación y formulaciones usadas por los autores. Esta combinación no garantiza exhaustividad.
+
+("Hypertension"[MeSH Terms] OR hypertension[tiab] OR "high blood pressure"[tiab]) AND ("Exercise"[MeSH Terms] OR exercise[tiab] OR "physical activity"[tiab])
+
+Descriptores verificados: Hypertension (D006973), Exercise (D015444).
+High Blood Pressure y Physical Activity constan como entry terms en sus respectivos registros MeSH. Se muestran aquí formas directas útiles; no se enumeran todas las variantes.
+
+4. CONTROLAR LA JERARQUÍA MeSH
+"Hypertension"[mh]
+Incluye términos más específicos situados debajo en la jerarquía.
+
+"Hypertension"[mh:noexp]
+No añade automáticamente esos términos más específicos.
+
+"Hypertension"[majr]
+Limita a registros donde el descriptor se ha marcado como tema principal. No equivale a buscar la palabra en el título. Ambos últimos recursos aumentan restricción y pueden perder estudios.
+
+5. BUSCAR UNA FRASE
+"eccentric exercise"[tiab]
+Busca la frase en ese campo. Si no está en el índice de frases, PubMed puede descomponerla; revisa avisos y Search Details. Las comillas no garantizan siempre una coincidencia literal.
+Frases reconocidas evitan el ATM habitual. No equivalen a añadir sus MeSH.
+
+6. TRUNCAMIENTO Y COMODINES
+El asterisco * sustituye cero o más caracteres. Debe haber al menos cuatro caracteres antes del primer asterisco. Se puede usar al final, dentro de una palabra y en frases; no es el signo ?.
+
+diabet*[tiab]
+randomi*ed[tiab]
+glyc*mic[tiab]
+"eccentric exercis*"[tiab]
+
+Los comodines desactivan el ATM y su expansión MeSH. Un patrón puede recuperar más variantes de las que pretendías. Para controlar variantes concretas:
+(randomized[tiab] OR randomised[tiab])
+(glycemic[tiab] OR glycaemic[tiab])
+
+7. PROXIMIDAD
+"exercise hypertension"[tiab:~3]
+Busca esos términos separados por un máximo de tres palabras intermedias, en CUALQUIER orden. Disponible en [ti], [tiab] y [ad] (afiliación).
+
+"eccentric exercise"[tiab:~0]
+Exige adyacencia, pero permite cualquier orden. Puede servir si la frase no está en el índice; no equivale a fijar el orden exacto.
+No combinar proximidad con *: PubMed ignora el operador de proximidad si hay un comodín en los términos entrecomillados.
+
+8. FECHAS
+exercise[tiab] AND 2020/01/01:2025/12/31[dp]
+Intervalo fijo y reproducible de publicación. [dp] no es la fecha de entrada en PubMed ni la de indexación MeSH. Escoge límites por la pregunta, no solo para reducir resultados.
+
+9. TIPO DE PUBLICACIÓN
+exercise[tiab] AND randomized controlled trial[pt]
+Busca el tipo de publicación de ensayo aleatorizado, no cualquier mención de randomized.
+
+exercise[tiab] AND systematic[sb]
+Usa el filtro específico de revisiones sistemáticas, que combina una estrategia con el tipo de publicación. No es idéntico a:
+exercise[tiab] AND systematic review[pt]
+
+Estos son ejemplos de restricciones, no un filtro de ECA exhaustivo diseñado para una revisión sistemática. Algunos registros aún no tienen tipos de publicación o MeSH asignados. Los filtros por edad, sexo o especie también pueden depender de MeSH y excluir registros relevantes.
+El filtro Free full text limita por disponibilidad del texto, no por calidad; no usarlo como sustituto de criterios científicos de inclusión.
+
+10. HISTORIAL Y CONSTRUCCIÓN AVANZADA
+Abre Advanced. Construye un bloque y pulsa Add to History; repite con el segundo. Si sus números reales son #1 y #2:
+#1 AND #2
+
+Usa los números que tenga TU sesión, no asumas que siempre serán esos. Compara recuentos, cambia una decisión cada vez y mira qué artículos entran o salen. History permite descargar las cadenas y caduca tras ocho horas de inactividad.
+
+11. COMPROBAR QUÉ HIZO PUBMED
+Advanced > History > desplegar ">" en la consulta > Search Details.
+Revisa traducción, campos, MeSH, frases no reconocidas y etiquetas inválidas. Confirma que recupera artículos semilla pertinentes; si no, averigua qué bloque los elimina. Guarda cadena exacta, fecha, base y recuento realmente observado. No inventes un recuento.
+
+12. GUARDAR Y ACTUALIZAR
+Create alert permite guardar la búsqueda y recibir correo; requiere iniciar sesión en My NCBI. Create RSS permite obtener un feed para un lector RSS. Solo preparar después de revisar la estrategia. No se ha activado aquí ninguna cuenta, alerta ni tarea.
+
+REGLA DE TRABAJO PARA EL TFM
+Empieza con los conceptos imprescindibles y una cadena razonablemente sensible. Añade restricciones justificadas, una cada vez. Si hay demasiados resultados, revisa ruido y términos; si faltan artículos conocidos, revisa campos, sinónimos, frases, MeSH y filtros. Más restricciones no significa una búsqueda mejor.
+
+FUENTES OFICIALES
+Sintaxis, campos, filtros, proximidad, historial y alertas:
+https://pubmed.ncbi.nlm.nih.gov/help/
+Constructor:
+https://pubmed.ncbi.nlm.nih.gov/advanced/
+MeSH Hypertension:
+https://www.ncbi.nlm.nih.gov/mesh/68006973
+MeSH Exercise:
+https://www.ncbi.nlm.nih.gov/mesh/68015444
+
+La documentación de PubMed consultada indica actualización del 30 de septiembre de 2026. Esta chuleta no ejecuta una revisión, no ofrece cifras de resultados y no modifica los materiales anteriores.
+
+
+[exit code: 0]
