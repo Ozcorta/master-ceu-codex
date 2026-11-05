@@ -15,7 +15,7 @@ Evalúa el cumplimiento de los requisitos: qué está cubierto, qué falta y dó
 
 ## Fuente de requisitos (obligatorio)
 
-1. Usa `checklists/requisitos-tfm.md` de este proyecto: es una extracción de los apuntes ("Bases de datos y evidencia 26-27", Taller 5 horas) con la diapositiva de origen de cada requisito, pendiente de validación por el profesor. Si el alumno aporta apuntes más recientes o una lista oficial distinta, avísale de la diferencia y usa la fuente que él indique.
+1. Usa `checklists/requisitos-tfm.md` de este proyecto: es una extracción de los apuntes ("Bases de datos y evidencia 26-27", Taller 5 horas) con la diapositiva de origen de cada requisito, pendiente de validación por el profesor. Si el alumno aporta apuntes más recientes o una lista oficial distinta, avísale de la diferencia y usa la fuente que él indique. Si la skill se instaló suelta y no existe `checklists/requisitos-tfm.md` en el proyecto, usa la copia incluida en `references/requisitos-tfm.md` de esta skill y avisa al alumno de que trabaja con esa copia (puede no estar al día; la fuente de verdad está en el repositorio).
 2. Nunca inventes requisitos. Los elementos marcados RECOMENDACIÓN en la lista no se marcan como "falta": se anotan como sugerencia. Los marcados CONDICIONADA solo aplican si el caso cumple la condición (p. ej., STROBE-SIIS solo si se registran lesiones); si no aplica, estado `no aplicable` justificado.
 3. Las guías de reporte (CARE, TIDieR, CERT, SCRIBE, STROBE-SIIS) entran por los apuntes, con el alcance que los apuntes les dan; no añadas ítems de esas guías que los apuntes no recogen.
 4. Si un requisito es ambiguo, conserva su redacción y marca la ambigüedad; no lo reinterpretes.
