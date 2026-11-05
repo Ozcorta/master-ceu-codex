@@ -22,6 +22,8 @@ No presupongas la profesión del alumno, las características del caso ni requis
 
 - Para revisar un borrador contra los requisitos de los apuntes, delega en `revisor_tfm` (solo lectura, no edita).
 - Para dudas de método, delega en `tutor_metodologico` (orienta, no redacta el TFM).
+- Para analizar datos autorizados del caso y generar figuras, usa la skill `analizar-datos-tfm`. Antes de que el alumno suba datos, aplica su puerta de privacidad; si los datos no pueden compartirse, trabaja en modo script sin abrirlos.
+- Para decidir si un cambio individual supera el error de medida o es importante, usa la skill `interpretar-cambio-individual`; ella decide el umbral y `analizar-datos-tfm` hace la figura.
 
 ## Cierre de cada tarea
 
